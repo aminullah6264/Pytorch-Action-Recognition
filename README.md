@@ -1,6 +1,9 @@
 # BidirectionalLSTM
 Action Recognition in Video Sequences using Deep Bi-directional LSTM with CNN Features
 
+https://ieeexplore.ieee.org/document/8121994/
+
+
 We have used caffe mode to extract deep features from video using matlab script "oneFileFeatures..."
 Each CSV file represents features of one video.
 which is split using "TrianTestSpit.m"
