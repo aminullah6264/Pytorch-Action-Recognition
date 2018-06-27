@@ -17,6 +17,12 @@ The train and validation split is done on Train Data with "EachClassCSV" files a
 Finally, we use the "Training Code for LSTM.py" this code contains simple LSTM, Multi-layer LSTM, and Multi-layer Bidirectional LSTM.
 
 
+
+
+
+
+
+
 Please cite the following paper
 
-Ullah, A., Ahmad, J., Muhammad, K., Sajjad, M., & Baik, S. W. (2018). Action Recognition in Video Sequences using Deep Bi-Directional LSTM With CNN Features. IEEE Access, 6, 1155-1166.
+{Ullah, A., Ahmad, J., Muhammad, K., Sajjad, M., & Baik, S. W. (2018). Action Recognition in Video Sequences using Deep Bi-Directional LSTM With CNN Features. IEEE Access, 6, 1155-1166.}
