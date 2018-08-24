@@ -1,5 +1,4 @@
-# BidirectionalLSTM
-Action Recognition in Video Sequences using Deep Bi-directional LSTM with CNN Features
+# Action Recognition in Video Sequences using Deep Bi-directional LSTM with CNN Features
 
 https://ieeexplore.ieee.org/document/8121994/
 
