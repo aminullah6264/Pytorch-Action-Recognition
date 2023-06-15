@@ -47,6 +47,9 @@ class MultiLayerBiLSTMClassifier(nn.Module):
 # Load the features and labels from numpy arrays
 train_features = torch.from_numpy(np.load('train_features.npy')).float()
 train_labels = torch.from_numpy(np.load('train_labels.npy'))#.long()
+idx = np.random.permutation(len(train_features))
+train_features, train_labels = train_features[idx], train_labels[idx]
+
 test_features = torch.from_numpy(np.load('test_features.npy')).float()
 test_labels = torch.from_numpy(np.load('test_labels.npy'))#.long()
 
