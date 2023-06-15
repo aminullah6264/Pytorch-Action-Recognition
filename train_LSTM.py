@@ -92,7 +92,7 @@ for epoch in range(num_epochs):
         train_total += 1
         train_correct += (predicted == batch_labels).sum().item()
     train_loss /= train_total
-    train_accuracy = train_correct / train_total
+    train_accuracy = 100 * train_correct / train_total
     train_losses.append(train_loss)
     train_accuracies.append(train_accuracy)
 
@@ -116,9 +116,13 @@ for epoch in range(num_epochs):
             if predicted == batch_labels:
                 test_correct += 1
             # Calculate testing accuracy
-        test_accuracy = 100 * test_correct / test_total
+        test_accuracy = test_correct / test_total
+        test_loss /= test_total
+        test_accuracy = 100* test_correct / test_total
+        test_losses.append(test_loss)
+        test_accuracies.append(test_accuracy)
         # Print testing loss and accuracy
-        print('Test Loss: {:.4f}, Test Accuracy: {:.2f}%'.format(test_loss, test_accuracy))
+        print('Train Loss: {:.4f}, Train Accuracy: {:.2f}%  Test Loss: {:.4f}, Test Accuracy: {:.2f}%'.format( train_loss, train_accuracy, test_loss, test_accuracy))
 
 # Plot training and testing losses and accuracies
 plt.figure(figsize=(10, 5))
